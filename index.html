@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2115 - torcik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #cc0404;
+            color: #cc0404;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="21i15.png" alt="Logo Firmy" style="width: 500px; height: 500px;">
+    </header>
+    <nav>
+        <a href="https://miszel2115.github.io/main/">Strona Miszela</a>
+        <a href="https://sklep.2115.pl/pl/p/2115-RODZINNY-BIZNES-MIXTAPE-2-CD-STANDARD/41">O Nas</a>
+        <a href="https://sklep.2115.pl/">Sklep</a>
+        <a href="https://sklep.2115.pl/pl/i/KONTAKT/9">Kontakt</a>
+    </nav>
+    <style>
+        .menu {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            margin-right: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .game {
+            margin-bottom: 20px;
+        }
+
+        .recipe {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#koledy">Kolędy</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#gry">Gry</a></li>
+            <li><a href="#przepisy">Przepisy</a></li>
+        </ul>
+    </nav>
+
+    <section id="koledy">
+        <h2>Kolędy</h2>
+        <ul>
+            <li>
+                <h3>Dzisiaj w Betlejem</h3>
+                <audio src="Dzisiaj w Betlejem.mp3" controls></audio>
+            </li>
+            <li>
+                <h3>Cicha noc</h3>
+                <audio src="Cicha noc.mp3" controls></audio>
+            </li>
+            <li>
+                <h3>Jingle Bells</h3>
+                <audio src="jingle bells.mp3" controls></audio>
+            </li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <figure>
+                <img src="choina.jpg" alt="Choinka">
+                <figcaption>Choinka</figcaption>
+            </figure>
+            <figure>
+                <img src="ozdoby.jpg" alt="Ozdoby">
+                <figcaption>Ozdoby</figcaption>
+            </figure>
+            <figure>
+                <img src="prezenty.jpg" alt="Prezenty">
+                <figcaption>Prezenty</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="gry">
+        <h2>Gry</h2>
+        <div class="game">
+            <h3>Lamigłówka świąteczna</h3>
+            <p>Jestem symbolem Bożego Narodzenia, Blaskiem ogarniam całą wieś i miasto. Na topiku, stoisku lub choince mnie znajdziesz, W jednej chwili oznaczam radość i świętość. Kim jestem?</p>
+        </div>
+        <div class="game">
+            <h3>Krzyżówka świąteczna</h3>
+            <p>H   O   L   I   D   A   Y   S  
+                O                         S
+                L                         N
+                I                         O
+                D   W   R   E   A   T   H
+                A                         W
+                Y                         
+                S   G   I   F   T   S  
+                
+                Wskazówki:
+                1. Okrągły dekoracyjny przedmiot, który zawieszamy na drzwiach lub oknie.
+                2. Prezenty, które dostajemy na Boże Narodzenie.
+                3. Świąteczna pora roku.
+                4. Poczta, która pracuje tylko w okresie przedświątecznym.
+                5. Środek, który jest używany do dekoracji choinki.</p>
+        </div>
+    </section>
+
+    <section id="przepisy">
+        <h2>Przepisy</h2>
+        <div class="recipe">
+            <h3>Pierniki</h3>
+            <ul>
+                <li>500 g mąki</li>
+                <li>250 g miodu</li>
+                <li>120 g masła</li>
+                <li>2 jajka</li>
+                <li>1 łyżeczka przyprawy korzennej</li>
+                <li>1/2 łyżeczki sody oczyszczonej</li>
+                <li>szczypta soli</li>
+            </ul>
+            <ol>
+                <li>Mąkę przesiać do miski, dodać sodę, przyprawę korzenną i sól, wymieszać.</li>
+                <li>W garnku podgrzać miód i masło, aż się roztopią i dokładnie wymieszać.</li>
+                <li>Do mąki dodać jajka i masę miodowo-masłową, wyrobić ciasto.</li>
+                <li>Ciasto schłodzić przez około 30 minut w lodówce.</li>
+                <li>Blaszkę wyłożyć papierem do pieczenia.</li>
+                <li>Na stolnicy rozwałkować ciasto na grubość około 1 cm.</li>
+                <li>Wykrawać ciasteczka przy pomocy foremek w różnych kształtach.</li>
+                <li>Ułożyć ciasteczka na blasze i piec w nagrzanym do 180 stopni C piekarniku przez około 12-15 minut.</li>
+                <li>Ostudzić na kratce.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h3>Sernik na zimno</h3>
+            <ul>
+                <li>300 g serka mascarpone</li>
+                <li>200 g jogurtu greckiego</li>
+                <li>100 g cukru pudru</li>
+                <li>sok i skórka z 1 pomarańczy</li>
+                <li>2 łyżki żelatyny</li>
+                <li>200 ml śmietany kremówki</li>
+            </ul>
+            <ol>
+                <li>Żelatynę rozpuścić w niewielkiej ilości wrzątku i odstawić do ostygnięcia.</li>
+                <li>Do miski włożyć serek mascarpone, jogurt grecki, cukier puder, sok i skórkę pomarańczy.</li>
+                <li>Całość miksować na jednolitą masę.</li>
+                <li>Śmietanę kremówkę ubić na sztywno.</li>
+                <li>Do masy serowej dodać ubitą śmietanę i rozpuszczoną żelatynę, dokładnie wymieszać.</li>
+                <li>Masę wylać do foremek lub foremek do muffinek.</li>
+                <li>Wstawić desery do lodówki i pozostawić tam na co najmniej 4 godziny.</li>
+                <li>Przed podaniem zdobić owocami.</li>
+            </ol>
+        </div>
+    </section>
+    
+    
+    <hr>
+    <footer>
+        <p>&copy; 2023 By Miszel</p>
+        <p>Data: <span id="currentDate"></span></p>
+        <script>
+           function aktualizujDate() {
+            const currentDateElement = document.getElementById("currentDate");
+            const aktualnaData = new Date();
+            currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
+        }
+    
+        // Wywołanie funkcji aktualizującej datę na początku
+        aktualizujDate();
+    
+        // Ustawienie interwału, aby odświeżać datę co sekundę
+        setInterval(aktualizujDate, 1000);
+    
+        </script>
+    </footer>
+    </body>
+    </html>
